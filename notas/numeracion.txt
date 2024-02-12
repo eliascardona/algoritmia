@@ -1,0 +1,57 @@
+	PREFACIAO TEÓRICO PARA TRABAJAR EN LA CONVERSIÓN DE SISTEMAS NUMÉRICOS	
+
+	SISTEMAS NUMÉRICOS
+
+	SISTEMAS SIMBÓLICOS ----
+	En estos sistemas numéricos, un símbolo respresenta una cantidad, y a las cantidades se les aplican ciertas reglas.
+	Un ejemplo de este sistema numérico simbólico sería:
+
+						+ El sistema de numeración romano.
+
+	SISTEMAS POSICIONALES ----
+	Estos sistemas de numeración tienen una cantidad de símbolos bastante reducida, sin embargo,
+	la posición que ocupa cada simbolo afectara la cantidad de elementos/valor que representa.
+	Un ejemplo de este sistema numérico simbólico sería:
+
+						+ El sistema de numérico decimal.
+						+ El sistema de numérico binario.
+						+ El sistema de numérico hexadecimal.
+
+	CONVERSIÓN ENTRE SISTEMAS NUMÉRICOS ----
+	Para convertir de sistema decimal a otras bases:
+				  _____
+				  |		a) Método de Suma de pesos
+				  |
+	B10  =>  Bx  <
+				  |
+				  |
+				  _____	b) Método de Divisón o Multiplicaciones sucesivas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
