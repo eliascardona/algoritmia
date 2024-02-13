@@ -9,7 +9,7 @@
 
 void opciones();
 
-/*int Divide(int n) {
+int Divide(int n) {
 	int bit = n%2;
 }
 
@@ -19,23 +19,9 @@ bool StopDividing(int a, int b) {
 	} else {
 		return false;
 	}
-}*/
-
-void DecimalABinario(int numero) {
-    int bits[32];
-    int indice = 0;
-
-    while (numero > 0) {
-        bits[indice++] = numero % 2;
-        numero /= 2;
-    }
-
-    printf("El numero en binario es: ");
-    for (int i = indice - 1; i >= 0; i--) {
-        printf("%d", bits[i]);
-    }
-    printf("\n");
 }
+
+
 
 int main() {
 	int op = 20;
@@ -52,37 +38,32 @@ int main() {
 			case 1: {
 				printf("Ingrese un numero en base 10:");
 				scanf("%d", &base10);
-				DecimalABinario(base10);
-			}
-			/*{
 				printf("Ingrese un numero en base 10:");
 				scanf("%d", &base10);
 
 				for(int i=0; i<40; i++) {
-					   @func       Divide
-					   @params     (int n)
-					   @return     func (params) : int bit
+					/*	 @func       Divide
+					     @params     (int n)
+					     @return     func (params) : int bit		*/
 					
 					int resto = Divide(base10);
 					cn++;
 					arreglo[cn] = resto;
 					aux = arreglo[cn];
 					
-					   @func       KeepDividing
-					   @params     (int a, int b)
-					   @return     func (params) : bool any
+					/*   @func       KeepDividing
+					     @params     (int a, int b)
+					     @return     func (params) : bool any		*/
 					
 					bool status = StopDividing(aux, 2);
 					if(status==true)
 						break;
 				}
-			}*/
+			}
 			break; // end of case 1
 
 			case 2: {
 				printf("Obtuvimos el siguiente byte:");
-			}
-			/*{
 				for(int i=0; i<20; i++) {
 					if(i<12) {
 						printf("%d  ", arreglo[i]);
@@ -90,7 +71,7 @@ int main() {
 						printf("n  ");
 					}
 				}
-			}*/
+			}
 			break; // end of case 2
 
 
