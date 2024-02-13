@@ -1,39 +1,48 @@
 /*
 	Lic. en Informárica 4°A - Algoritmia computacional
-	UNIDAD I - Primer ejercicio
-	Fecha: 08/feb/2024
+	UNIDAD I - Ejercicio de conversion de valores entre sistemas numéricos
+	Fecha: 12/feb/2024
 	Alumno: Elias Eduardo Cardona Rodríguez
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#define GRAV 9.8
 
-double arregloGlobal_Func[10]={};
-double arregloGlobal_Inc[10]={};
-
-void PintarTabla(int numeroCorridas);
-double ObtenerVel_Anterior(int pos);
-double velcidadFunc(float coef, float masa, float diferenciaTiempo, int iterador);
-double velcidadInc(float coef, float masa, float diferenciaTiempo, int iterador);
 void opciones();
 
+/*int Divide(int n) {
+	int bit = n%2;
+}
 
-bool KeepDividing(int a, int b) {
+bool StopDividing(int a, int b) {
 	if(a/b == 0 && a%b == 1) {
 		return true;
 	} else {
 		return false;
 	}
+}*/
+
+void DecimalABinario(int numero) {
+    int bits[32];
+    int indice = 0;
+
+    while (numero > 0) {
+        bits[indice++] = numero % 2;
+        numero /= 2;
+    }
+
+    printf("El numero en binario es: ");
+    for (int i = indice - 1; i >= 0; i--) {
+        printf("%d", bits[i]);
+    }
+    printf("\n");
 }
 
-
 int main() {
-	int op=100;
-	float masaSujeto=3.00;
-	float dif=3.00;
-	float resistencia=12.00;
-	int nCorridas=2;
+	int op = 20;
+	int base10 = 1;
+	int cn = 0;
+	int arreglo[20] = {};
+	int aux = 0;
 
 	while(1) {
 		opciones();
@@ -41,39 +50,48 @@ int main() {
 
 		switch(op) {
 			case 1: {
-				printf("\n\nIngrese la masa del sujeto:");
-				scanf("%f", &masaSujeto);
-
-				printf("Ingrese el coeficiente de resistencia:");
-				scanf("%f", &resistencia);
-
-				printf("Ingrese la diferencia entre tiempo (seg):");
-				scanf("%f", &dif);
-
-				printf("Ingrese el numero de corridas para calcular:");
-				scanf("%d", &nCorridas);
-
-				for(int iter=0; iter<nCorridas; iter++) {
-					/*
-					   velocidadFunc (params) : float coef, float masa, float diferenciaTiempo, int iterador
-					   velocidadInc (params) : float coef, float masa, float diferenciaTiempo, int iterador
-					*/
-					double velFunc = velcidadFunc(resistencia, masaSujeto, dif, iter);
-					arregloGlobal_Func[iter] = velFunc;
-
-					double velInc = velcidadInc(resistencia, masaSujeto, dif, iter);
-					arregloGlobal_Inc[iter] = velInc;
-				}
+				printf("Ingrese un numero en base 10:");
+				scanf("%d", &base10);
+				DecimalABinario(base10);
 			}
-			break;
+			/*{
+				printf("Ingrese un numero en base 10:");
+				scanf("%d", &base10);
+
+				for(int i=0; i<40; i++) {
+					   @func       Divide
+					   @params     (int n)
+					   @return     func (params) : int bit
+					
+					int resto = Divide(base10);
+					cn++;
+					arreglo[cn] = resto;
+					aux = arreglo[cn];
+					
+					   @func       KeepDividing
+					   @params     (int a, int b)
+					   @return     func (params) : bool any
+					
+					bool status = StopDividing(aux, 2);
+					if(status==true)
+						break;
+				}
+			}*/
+			break; // end of case 1
 
 			case 2: {
-				printf("Ingrese el numero de corridas a imprimir:");
-				scanf("%d", &nCorridas);
-
-				PintarTabla(nCorridas);
+				printf("Obtuvimos el siguiente byte:");
 			}
-			break;
+			/*{
+				for(int i=0; i<20; i++) {
+					if(i<12) {
+						printf("%d  ", arreglo[i]);
+					} else {
+						printf("n  ");
+					}
+				}
+			}*/
+			break; // end of case 2
 
 
 			case 10: {
@@ -88,85 +106,13 @@ int main() {
 }
 
 
-void PintarTabla(int numeroCorridas) {
-	double diferencia = 1.00;
-	printf("------------------------------------------------------------------------------------------\n");
-	printf("|    Tiempo\t |\t   Velocidad     |    Incremento      \t |    Diferencia     \t|\n");
-	printf("------------------------------------------------------------------------------------------\n");
-	for(int i=0; i<numeroCorridas; i++) {
-		diferencia = arregloGlobal_Func[i] - arregloGlobal_Inc[i];
-		printf("|\t  %d  \t |\t   %lf \t |\t   %lf \t |\t   %lf \t |\n", i, arregloGlobal_Func[i], arregloGlobal_Inc[i], diferencia);
-	}
-	printf("------------------------------------------------------------------------------------------\n\n");
-}
-
-
-double ObtenerVel_Anterior(int pos) {
-	double valor = 1.00;
-	valor = arregloGlobal_Inc[pos];
-	return valor;
-}
-
-
-double velcidadFunc(float coef, float masa, float diferenciaTiempo, int iterador) {
-	double vel_func = 1.00;
-	float tiempo = 0.00;
-	double expoVal = 1.00;
-	double gmc1 = 1.00;
-	double gmc2 = 1.00;
-	gmc1 = (GRAV*masa/coef);
-
-	if(iterador==0) {
-		tiempo = tiempo+0;
-	} else {
-		tiempo = iterador*diferenciaTiempo;
-	}
-	expoVal = coef*tiempo/masa;
-	gmc2 = (GRAV*masa/coef)*exp(-expoVal);
-	vel_func = gmc1 - gmc2;
-
-
-	return vel_func;
-}
-
-
-double velcidadInc(float coef, float masa, float diferenciaTiempo, int iterador) {
-	double vel_inc = 1.00;
-	float tiempo = 0.00;
-	double mg = 1.00;
-	double mgcv = 1.00;
-	double ResistV = 1.00;
-
-	mg = masa*GRAV;
-
-	for(int i=0; i<=iterador; i++) {
-		if(i==0) {
-			tiempo = tiempo+0;
-		} else {
-			tiempo += diferenciaTiempo;
-		}
-	}
-	int indice_ant = iterador-1;
-	double vel_ant = ObtenerVel_Anterior(indice_ant);
-
-
-	ResistV = coef*vel_ant;
-	mgcv = ((mg-ResistV)/masa);
-	vel_inc = mgcv*(tiempo) + vel_ant;
-
-
-	return vel_inc;
-}
-
-
 void opciones() {
 	printf("\n");
-	printf("  ----  ALGORITMO PARA COMPARAR VELOCIDADES EXACTAS VS. VELOCIDADES APROXIMADAS  ----  \n\n");
-	printf("  1.     Calculo de velocidad en func. del tiempo (ambas soluciones)\n");
-	printf("  2.     Impresion de los calculos \n");
+	printf("  ----   ALGORITMO DE CONVERSION DE VALORES ENTRE SISTEMAS NUMERICOS  ----  \n\n");
+	printf("  1.     Conversion a binario         \n");
+	printf("  2.     Pintado de la conversion     \n");
 
 	printf("  10.     Salir\n");
 	printf("  Digite una opcion: ");
 }
-
 
