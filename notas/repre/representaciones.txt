@@ -1,0 +1,33 @@
+
+						   ALGORITMIA COMPUTACIONAL
+								  21/feb/2024
+						   UNIDAD 2 - SISTEMAS NUMÉRICOS
+				CONVERSIÓN DE SISTEMAS NUMÉRICOS EN LA COMPUTADORA
+
+		Los sistemas computacionales usan el estándar 1EEE 754 para representar valores
+		de punto flotante, y este estándar utiliza la sig. estructura
+
+						Signo /	exceso de 127	/	Mantisa
+					 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+				 	|_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|
+
+		Pasos para convertir una cantidad a su representación a su representación en punto flotante
+		o coma flotante:
+			1. Identificar el número con el signo y asignar un valor al bit correspondiente.
+			2. Convertir el número a binario sin signo.
+			3. Modificar el exponente de manera que quede un digito.
+			4. Obtener el exponente en exceso de 127 (sumar al exponente 127 y representarlo en binario de 8 bits).
+			5. Copiar la parte fraccionaria de la mantisa (le quitamos un 1 y la representamos en 63 bits).
+			6. Juntar todas las partes.
+
+
+
+
+
+
+
+
+
+
+
+

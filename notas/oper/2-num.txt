@@ -1,0 +1,22 @@
+								   ALGORITMIA COMPUTACIONAL
+										  26/feb/2024
+								   UNIDAD 2 - SISTEMAS NUMÉRICOS
+						 	  OPERACIONES ARITMETICAS CON PUNTO FLOTANTE
+
+									Signo /	exceso de 1368 /	Mantisa
+								 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+							 	|_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|
+
+		Para realizar operaciones aritmeticas entre dos o más cantidades de punto flotante, primero se suman las mantisas.
+
+		Para realizar multiplicar o dividir numeros de punto flotante, primero se multiplican/dividen las mantisas.
+		Se suman o se restan los exponentes y luego se normaliza el resultado
+		Las operaciones de división y multiplicación son conmutativas, pero no son distributivas ni asociativas.
+
+
+
+
+
+
+
+

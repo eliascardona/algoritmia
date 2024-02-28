@@ -1,0 +1,64 @@
+					  ALGORITMIA COMPUTACIONAL
+							13/feb/2024
+					UNIDAD 2 - SISTEMAS NUMÉRICOS
+
+		La ventaja de loos sistemas con potencias de 2 (base 2, base 4, etc),
+		es que podemos pasar de una de estas bases a otra
+		mediante la agrupación de digitos binarios.
+			EJEMPLOS:
+						35.75  =  1 0 0 0 1 1 . 1 1  (base 2)
+
+		En la computadora, los sistemas numéricos de base 2, la capacidad de los tipos
+		de datos está dada en la función de su tamaño. Por lo tanto, si tengo `3 bits`,
+		puedo representar 2 a la 3ra potencial (es decir, 3 nums diferentes) y el rango de valores
+		de este tipo de dato iría de 0 a 7, suponiendo que todos los numéros son positivos.
+
+		Si se desea guardar positivos y negativos, debo utilizar el bit más significativo
+		para almacenar el signo. A esta representación se le denomina `representación signo-magnitud`.
+
+
+		En una palabra de n-bits, mientras que el bit más significativo indique el signo del entero,
+		los restantes n-1 bits a la derecha del signo, representan la magnitud del entero.
+		Si tengo un tipo de dato con 8 bits (1 byte), ¿cuál será el rango de valores que puedo formar
+		representar su signo-magnitud?
+
+
+		( -- ) La representación `signo-magnitud` tiene las siguientes desventajas:
+
+				1. Tiene dos representaciones para el número 0.
+				2. Las operaciones aritméticas no resultan de forma directa
+				   cuando hay números negativos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

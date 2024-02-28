@@ -1,0 +1,36 @@
+								   ALGORITMIA COMPUTACIONAL
+										  21/feb/2024
+								   UNIDAD 2 - SISTEMAS NUMÉRICOS
+							  LIMITACIONES PARA REPRESENTAR CANTIDADES
+
+		Los sistemas computacionales tienen ciertas limitaciones a la hora de representar cantidades con punto flotante
+
+									Signo /	exceso de 1368 /	Mantisa
+								 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+							 	|_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|
+
+			El numero de aproximado de representación en digitos decimales, segun el tipo de dato que se use
+			es el siguiente:
+
+							 -----------------------------------------
+							|  Precisión  |  Dígitos  |  Tipo C       |
+							 -----------------------------------------
+							|  simple     |  ~ 7      |  float        |
+							|  double     |  ~ 16     |  double       |
+							|  cuadruple  |  ~ 34     |  long double  |
+							 -----------------------------------------
+
+		El epsilon de la máquina esta definido como el número más pequeño que, sumado a la unidad que
+		prodece un término distinto de 1
+
+		Algoritmo epsilon
+			x=1
+			n=0
+
+			while(1+x/2 > 1) {
+				n+=1
+				x/=2
+			}
+
+
+

@@ -1,6 +1,9 @@
-	PREFACIAO TEÓRICO PARA TRABAJAR EN LA CONVERSIÓN DE SISTEMAS NUMÉRICOS	
+						ALGORITMIA COMPUTACIONAL
+							13/feb/2024
+						UNIDAD 2 - SISTEMAS NUMÉRICOS
+			PREFACIAO TEÓRICO DE CONVERSIÓN DE SISTEMAS NUMÉRICOS
 
-	SISTEMAS NUMÉRICOS
+
 
 	SISTEMAS SIMBÓLICOS ----
 	En estos sistemas numéricos, un símbolo respresenta una cantidad, y a las cantidades se les aplican ciertas reglas.
