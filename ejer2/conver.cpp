@@ -97,32 +97,3 @@ void opciones() {
 	printf("  Digite una opcion: ");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

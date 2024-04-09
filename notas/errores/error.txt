@@ -1,0 +1,55 @@
+								     ALGORITMIA COMPUTACIONAL
+										  04/marzo/2024
+							   UNIDAD 3 - IMPLEMENTACIÓN DE ALGORTIMOS
+							   ERROR ADMITIDO SEGÚN EL TIPO DE PROBLEMA
+
+		El error, se denomina 'error de precisión de número' cuando representamos un número real 
+		en una computadora y depende del formato de representación que se utilice.
+
+		Cuando se obtiene un resultado tras aplicar un método algoritmico numérico, el error de este resultado,
+		nos da su exactitud.
+
+		Un resultado puede tener una alta precisión aunque tenga baja exactitud.
+		 *exactitud: Se define como la proximidad del valor medido u obtenido y el valor verdadero de una magnitud.
+	 	Una medición o cálculo es más exacto según más pequeño sea el error
+		 *precisión: Es la proximidad entre indicaciones o valores obtenidos en cálculos o mediciones repetidas.
+		La precisión se expresa numéricamente mediante medidas de dispersión.
+
+
+
+		Las soluciones numéricas normalmente contienen errores, que pueden ajustarse a 3 tipos principalmente;
+		a continuación los tipos de errores numéricos:
+
+						1. Err. inherentes.
+		Err  ->  {		2. Err. de redondeo.
+						3. Err. de truncamiento.
+
+		En un algoritmo numérico, se utuliza el concepto de error, definiendolo como lo sigueinte:
+		Es la diferencia entre el valor exacto de la solución y su valor aproximado, y se reporta de las
+		siguientes dos maneras: `error absoluto` o `error relativo`.
+
+		Si `xt` es un valor exacto y `xa` es un valor aproximado, entonces
+
+
+
+		epsilonA = 	| xt-xa |
+
+
+
+
+					|	xt-xa	|
+					|	-----	|
+		epsilonR = 	|	  xt	|
+					|			|
+
+
+
+
+
+
+
+
+
+
+
+

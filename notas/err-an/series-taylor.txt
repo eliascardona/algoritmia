@@ -1,0 +1,35 @@
+								     ALGORITMIA COMPUTACIONAL
+										  06/marzo/2024
+								   UNIDAD 3 - IMPLEMENTACIÓN DE ALGORTIMOS
+							  ERROR ADMITIDO SEGÚN EL TIPO DE PROBLEMA
+
+
+	Se usan para calcular con precisión el error en puntos específicos.
+	Se trata de encontrar una sumatoria de términos que represente el calor de una función en un punto (es una aproximación).
+
+	Cuando en el punto en el que se queiren encontrar las series es 0, se denominan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
